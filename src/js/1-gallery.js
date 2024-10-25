@@ -79,8 +79,23 @@ function showLargeImage(e){
   if(e.currentTarget === e.target){
     return;
   }
-  const clickedImage = e.target.closest('.gallery-image');
-  basicLightbox.create(`
-		<img class="gallery-image-modal" width="1112" height="640" src="${clickedImage.dataset.source}">
+  const clickedImage = e.target.closest('.gallery-link');
+  basicLightbox.create(`<button class="button-close" type="button" data-modal-close>
+          <svg class="button-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <button class="button-left" type="button" data-modal-left>
+          <svg class="button-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+		<img class="gallery-image-modal" width="1112" height="640" src="${clickedImage.href}">
+    <button class="button-right" type="button" data-modal-right>
+          <svg class="button-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 	`).show();
 }
