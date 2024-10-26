@@ -7,13 +7,14 @@
 }
 .sl-wrapper button.sl-close,
 .sl-wrapper .sl-navigation button.sl-next,
-.sl-wrapper .sl-navigation button.sl-prev{
+.sl-wrapper .sl-navigation button.sl-prev {
   color: #fff;
   width: 24px;
-  height: 24px;  
+  height: 24px;
   font-size: 36px;
 }
 .sl-wrapper div.sl-counter {
-    color: #fff;
-    font-size: 16px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
